@@ -3,6 +3,7 @@ on: [push]
 jobs:
   do-tests:
     environment: TEST
+    runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
