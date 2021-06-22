@@ -1,0 +1,8 @@
+name: test-workflow
+on: [push]
+jobs:
+  do-tests:
+    environment: TEST
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
